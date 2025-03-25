@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+  }
+  nav{
+    background-color: #334D5C;
+    display: flex; /* aligne les enfants (logo et menu) en ligne */
+    align-items: center; /* centre verticalement les éléments */
+    justify-content:space-around; /* espace égal entre logo et menu */
+    padding-right: 15px;
+    padding-left: 15px;
+    color: white;
+  }nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none; /* enlève les puces des listes */
+    gap: 20px; /* espace entre les éléments du menu */
+    margin: 0;
+    padding: 0;
+    width: 50%; /* la liste prend la moitié de la largeur */
+  }
+  #start {
+    background-color: rgb(218, 74, 74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+}
+    #start img {
+    height: 200px;
+    margin-left: 50px;
+    padding-top: 50px;
+  }
+  #start h1 {
+    font-size: 60px;
+    margin: 1px;
+  }
+  #start p{
+    padding-bottom: 50px;
+  }
+   #porto img {
+    height: 200px;
+    border-radius: 3%;
+   }
+   #porto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   #premier div {
+     margin: 30px;
+   }
+   #deuxieme div {
+     margin: 30px;
+   }
+   #troisieme div {
+     margin: 30px;
+   }
+   #portoT h1 {
+    margin-top: 50px;
+    font-size: 40px;
+    color: #334D5C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+   }
