@@ -21,6 +21,7 @@ body {
     padding: 0;
     width: 50%; /* la liste prend la moitié de la largeur */
   }
+  
   #start {
     background-color: rgb(218, 74, 74);
     display: flex;
@@ -42,6 +43,7 @@ body {
   #start p{
     padding-bottom: 50px;
   }
+
    #porto img {
     height: 200px;
     border-radius: 3%;
@@ -69,3 +71,197 @@ body {
     align-items: center;
     margin-bottom: 0;
    }
+
+#about {
+    background-color: rgb(218, 74, 74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-top: 25px;
+   }
+   #about h1 {
+    margin-top: 50px;
+    font-size: 40px;
+   }
+   #about div:nth-of-type(2) {
+    display: flex;           /* Met les <p> en ligne */
+    justify-content: center; /* Centre horizontalement */
+    gap: 40px;               /* Espace entre les deux <p> */
+    padding-bottom: 70px;
+  }
+  .sectionContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+@media (min-width:600px) and (max-width:1024px){
+    nav { 
+        justify-content:center;
+        gap : 10px
+    }
+    #porto img{
+        height: 150px;
+    }
+#porto {
+    flex-direction: column;
+}
+#porto div{
+    margin : 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+    @media (min-width:320px) and (max-width:600px){
+    nav{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    nav ul {
+            padding-bottom: 10px;
+        }
+    #porto img{
+            height: 200px;
+        }
+    #porto {
+        flex-direction: column;
+    }
+    #porto div{
+        margin : 0px;
+    }
+    #about div:nth-of-type(2){
+        flex-direction: column;
+        
+    }
+    }
+.sectionContact h1 {
+    color: #2C3E50;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    gap: 20px;
+}
+input {
+    border: 0;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.5);
+    height: 80px;
+    font-size: 18px;
+    outline: none;
+
+}
+input::placeholder {
+    letter-spacing: 1px;
+}
+textarea {
+    border: 0;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.5);
+    height: 160px;
+    font-size: 18px;
+    outline: none;
+    margin-top: 30px;
+}
+textarea:focus {
+    border-bottom: 2px solid #DC3545;
+}
+textarea::placeholder {
+    font-size: 18px;
+    font-weight: 500;
+}
+button {
+    background-color: #DC3545;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    width: 80px;
+    height: 50px;
+    margin-top: 15px;
+}
+footer {
+    background-color: #334D5C;
+    color: white;
+    text-align: center;
+    display: flex; /* aligne les enfants (logo et menu) en ligne */
+    align-items:normal; /* centre verticalement les éléments */
+    justify-content:space-around;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
+  footer h1 {
+    font-size: 20px;
+  }
+  footer div:nth-of-type(2) i {
+    padding: 10px;
+    margin-left: 5px;
+    border: 2px solid white;
+    border-radius: 80%;
+  }
+ footer a {
+    color: rgb(58, 187, 172);
+    text-decoration: none;
+ }
+.Copy {
+    background-color: hsl(202, 79%, 15%);    /* Fond rouge sur toute la largeur */
+    color: white;               /* Texte blanc */
+    padding: 15px 0;            /* Espace haut/bas */
+    font-size: 8px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  @media (min-width:600px) and (max-width:1024px){
+    nav { 
+        justify-content:center;
+        gap : 10px
+    }
+    #porto img{
+        height: 150px;
+    }
+#porto {
+    flex-direction: column;
+}
+#porto div{
+    margin : 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+    @media (min-width:320px) and (max-width:600px){
+    nav{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    nav ul {
+            padding-bottom: 10px;
+        }
+    #porto img{
+            height: 200px;
+        }
+    #porto {
+        flex-direction: column;
+    }
+    #porto div{
+        margin : 0px;
+    }
+    #about div:nth-of-type(2){
+        flex-direction: column;
+        
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer div {
+        margin: 25px;
+    }
+    }
+  
